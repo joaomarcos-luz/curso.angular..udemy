@@ -7,7 +7,7 @@
     border-radius: 25px;
     padding: 30px;
     font-family: 'Poppins', sans-serif;
-
+}
     .card__item{
     padding: 10px;
     }
@@ -20,4 +20,7 @@
     font-weight: 800;
     font-size: 40px;
     }
+
+::ng-deep .card-button-cancel{
+    background-color: deepskyblue !important;
 }

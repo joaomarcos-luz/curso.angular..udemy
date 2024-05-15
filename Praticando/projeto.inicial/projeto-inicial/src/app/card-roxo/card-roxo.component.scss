@@ -20,11 +20,3 @@
     font-weight: 800;
     font-size: 40px;
 }
-
-:host ::ng-deep #primeiro .card-button-cancel {
-    background-color: blueviolet !important;
-}
-
-:host ::ng-deep #segundo .card-button-cancel {
-    background-color: deeppink !important;
-}
