@@ -1,0 +1,19 @@
+<button style="width: 100; background-color: coral;">Botão 0</button><br>
+
+<button [style.width]="widthButton1" [style.backgroundColor]="'blue'">Botão 01</button><br>
+
+<button [style.width.px]="widthButton2" [style.backgroundColor]="'pink'">Botão 02</button><br>
+
+<button [style]="'width: 150px; background-Color: aqua;'">Botão 03</button><br>
+
+<button [style]="{width: '160px', backgroundColor: 'peru'}">Botão 04</button><br>
+
+<button [style]="objStyleButton5">Botão 05</button><br>
+
+<br>
+
+<button (click)="updateStyleButton5()">Atualizar Botão 05</button><br>
+
+<button (click)="updateStyleButton5Corret()">Atualizar Botão 05 Correto</button><br>
+
+<button (click)="updaWidthButton2()">Atualizar Width Botão 02</button>
