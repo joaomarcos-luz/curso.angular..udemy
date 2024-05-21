@@ -6,11 +6,12 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./card-button.component.scss']
 })
 export class CardButtonComponent {
-  @Output() buttonClickEmiter = new EventEmitter()
+  propTeste: boolean = false
+  @Output('buttonClickEmitter') buttonClickEmitter = new EventEmitter<boolean>()
 
   onButtonClick() {
     console.log('onButtonEmiter')
 
-    this.buttonClickEmiter.emit()
+    this.buttonClickEmitter.emit(this.propTeste)
   }
 }

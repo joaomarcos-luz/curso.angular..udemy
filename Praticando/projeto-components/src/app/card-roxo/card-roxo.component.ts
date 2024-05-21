@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CardRoxoComponent {
 
+  clickButton(valueClick: boolean){
+    console.log(valueClick)
+  }
 }

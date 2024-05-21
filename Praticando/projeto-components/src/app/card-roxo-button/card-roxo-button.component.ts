@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card-roxo-button',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-roxo-button.component.scss']
 })
 export class CardRoxoButtonComponent {
+  valueEmiter: boolean = true
 
+  @Output('onButtonClick') onButtonClick = new EventEmitter<boolean>()
+
+  buttonClick() {
+    this.onButtonClick.emit(this.valueEmiter)
+  }
 }
