@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  cardPlanType = 'simplees'
-  cardPlanPrice = 100
+  cardPlanType = 'Simples';
+  cardPlanPrice = 100;
 
   handlePlanType(text: string) {
-    this.cardPlanType = text
+    this.cardPlanType = text;
   }
 }
