@@ -1,0 +1,36 @@
+<h1 [ngClass]="{
+  'is-big is-green': isGreen,
+  'is-orange': !isGreen,
+}"
+>Sou un H1 !!!</h1>
+
+<h1 [class]="{
+  'is-green': isGreen,
+  'is-orange': !isGreen
+}"
+>Sou um h1 2!!!</h1>
+
+<button (click)="setToGreen()">Verde</button>
+<button (click)="setToOrange()">Laranja</button>
+
+<!-- String -->
+<h1 [ngClass]="'is-big is-green'">Siu H1!</h1>
+<h1 [class]="'is-big is-green'">Siu H1!</h1>
+
+<!-- Arrays -->
+<h1 [ngClass]="['is-big', 'is-green']">Siu H1!</h1>
+<h1 [class]="['is-big', 'is-green']">Siu H1!</h1>
+
+<!-- Objeto -->
+<h1 [ngClass]="{ 'is-green': isGreen, 'is-orange': !isGreen, }">Siu H1!</h1>
+<h1 [class]="{ 'is-green': isGreen, 'is-orange': !isGreen, }">Siu H1!</h1>
+
+<!-- Diferença -->
+ <!-- NgClass aceita mais de uma class -->
+<h1 [ngClass]="{ 'is-big is-green': isGreen, 'is-orange': !isGreen, }">Siu H1!</h1>
+<h1 [class]="{ 'is-green': isGreen, 'is-orange': !isGreen, }">Siu H1!</h1>
+
+<!-- Diferença -->
+ <!-- Ao declarar só uma class poder ser atribuida de maneira difernte -->
+<h1 [ngClass]="{ 'is-green': isGreen, }">Siu H1!</h1>
+<h1 [class.is-green]="isGreen">Siu H1!</h1>
