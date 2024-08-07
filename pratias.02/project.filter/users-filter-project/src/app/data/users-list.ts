@@ -13,7 +13,7 @@ export const UsersList: IUser[] = [
             estado: "GO",
             pais: "Brasil"
         },
-        telefone: 62998028545,
+        telefone: '62998028545',
         ativo: true,
         funcao: "Desenvolvedor",
         dataCadastro: "2024-08-01T09:00:00.0002Z",
@@ -36,7 +36,7 @@ export const UsersList: IUser[] = [
             estado: "SP",
             pais: "Brasil"
         },
-        telefone: 11987654321,
+        telefone: '11987654321',
         ativo: true,
         funcao: "Gerente de Projetos",
         dataCadastro: "2024-07-15T10:30:00.0002Z",
@@ -59,7 +59,7 @@ export const UsersList: IUser[] = [
             estado: "RJ",
             pais: "Brasil"
         },
-        telefone: 21987654321,
+        telefone: '21987654321',
         ativo: false,
         funcao: "Analista de Sistemas",
         dataCadastro: "2024-06-01T08:00:00.0002Z",
@@ -82,7 +82,7 @@ export const UsersList: IUser[] = [
             estado: "MG",
             pais: "Brasil"
         },
-        telefone: 31987654321,
+        telefone: '31987654321',
         ativo: true,
         funcao: "Designer",
         dataCadastro: "2024-07-25T12:00:00.0002Z",
@@ -105,7 +105,7 @@ export const UsersList: IUser[] = [
             estado: "SP",
             pais: "Brasil"
         },
-        telefone: 11991234567,
+        telefone: '11991234567',
         ativo: true,
         funcao: "Product Owner",
         dataCadastro: "2024-05-20T09:30:00.0002Z",

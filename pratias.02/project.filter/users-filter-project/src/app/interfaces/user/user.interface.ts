@@ -8,7 +8,7 @@ export interface IUser {
     senha: string
     idade: number
     endereco: IAddress
-    telefone: number
+    telefone: string
     ativo: boolean
     funcao: string
     dataCadastro: string
