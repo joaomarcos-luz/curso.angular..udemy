@@ -9,14 +9,19 @@ import { IFilterOptions } from '../../interfaces/filter-options.interface';
 export class FilterComponent {
 
   filterOptions: IFilterOptions = {
-    name: "",
-    startDate: "",
-    endDate: "",
-    status: "",
+    name: undefined,
+    startDate: undefined,
+    endDate: undefined,
+    status: undefined,
   }
 
-  dateSelected (date: any) {
-    console.log(date)
+  statusList = [
+    { description: "Ativo", value: true },
+    { description: "Inativo", value: false }
+  ]
+
+  onFilter() {
+    console.log(this.filterOptions)
   }
 
 }     
