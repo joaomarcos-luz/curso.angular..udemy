@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
 
     const NAME_NOT_TYPED = name === undefined;
   
-    if (NAME_NOT_TYPED) {-
+    if (NAME_NOT_TYPED) {
       return usersList;
     }
   
