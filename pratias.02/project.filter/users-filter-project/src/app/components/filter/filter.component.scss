@@ -1,4 +1,3 @@
-
 .filter {
     width: 100%;
     height: 100%;
@@ -7,26 +6,17 @@
 .form {
     width: 100%;
     height: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 
-     &__nome {
+    &__name { }
 
-     }
+    &__date-picker { }
 
-     &__date-picker {
+    &__status { }
 
-     }
-
-     &__status {
-
-     }
-
-     &____button {
-
-     }
-
+    &__button { }
 }
-
