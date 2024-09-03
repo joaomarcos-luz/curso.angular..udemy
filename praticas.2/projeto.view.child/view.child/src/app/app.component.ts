@@ -1,4 +1,5 @@
-import { Component, ElementRef, viewChild, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild} from '@angular/core';
+import { FilhoComponent } from './filho/filho.component';
 
 @Component({
   selector: 'app-root',
@@ -25,4 +26,11 @@ export class AppComponent {
     this.minhaDivEL.nativeElement.textContent = "Conteudo da Div atualizado!"
   }
 
+  @ViewChild("filhoComp") 
+  filhoCompRef!: FilhoComponent
+
+  hello() {
+    this.filhoCompRef.dizerOi()
+    this.filhoCompRef.message = "Eu disse Oi!"
+  }
 }
