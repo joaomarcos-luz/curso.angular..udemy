@@ -1,0 +1,7 @@
+<button 
+  #meuButton 
+  *ngFor="let btn of buttonList" 
+  (click)="eventColor($event)"
+>{{ btn }}</button>
+
+<button (click)="resetButton()">Remover</button>
