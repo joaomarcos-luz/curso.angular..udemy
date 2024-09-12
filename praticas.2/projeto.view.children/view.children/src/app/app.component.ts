@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import { toArray } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -18,10 +19,15 @@ export class AppComponent implements AfterViewInit {
   buttonEl!: QueryList<ElementRef<HTMLButtonElement>>
 
   ngAfterViewInit() {
-    console.log(this.buttonEl)
+    console.log(this.buttonEl)  
+
+    this.buttonEl.changes.subscribe((result) => {
+      console.log(result)
+    })
+
   }
 
-  eventColor(event: Event) {
+  changeColor(event: Event) {
     console.log(event)
 
     const btnElement = event.target as HTMLButtonElement
@@ -35,4 +41,20 @@ export class AppComponent implements AfterViewInit {
       btnEl.nativeElement.style.color = 'black'
     })
   }
+
+   first() {
+
+    /* const primeiro = this.buttonEl.get(0) */
+
+    /*const primeiro = this.buttonEl.find(btnEl => btnEl.nativeElement.className === "btn-0") */
+
+    const primeiro = this.buttonEl.toArray()[0]
+
+    console.log(primeiro)
+  }
+
+  remove() {
+    this.buttonList.shift()
+  }
+
 }
