@@ -2,4 +2,18 @@
 
 <button [disabled]="false">Botão Prop</button>
 
-<button appDisabled>Botão Host Binding</button>
+<button appDisabled >Botão Host Binding</button>
+
+<p style="background-color: blue; color: black">Paragrafo usando Style chumbado</p>
+
+<p [attr.style]="'background-color: blue; color: black'">Paragrafo usando Attr Style</p>
+<p></p>
+
+<p [style]="'background-color: blue; color: black'">Propit Binding</p>
+
+<p [style]="{
+    backgroundColor: 'blue',
+    color: 'black',
+}">Prop Obj</p>
+
+<p appStyle>Diretiva</p>
