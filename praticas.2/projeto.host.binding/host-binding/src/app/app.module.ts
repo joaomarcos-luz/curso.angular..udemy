@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PropDisabled } from './diretibes/diretive-prop'
 import { StyleDirectives } from './diretibes/style.directive'
+import { ClassDiretive } from './diretibes/class-directive'
+import { ListenerDirective } from './diretibes/listener-diretive'
 
 @NgModule({
   declarations: [
     AppComponent,
     PropDisabled,
-    StyleDirectives
+    StyleDirectives,
+    ClassDiretive,
+    ListenerDirective
   ],
   imports: [
     BrowserModule,

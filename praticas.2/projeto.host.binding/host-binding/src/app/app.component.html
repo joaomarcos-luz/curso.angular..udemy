@@ -17,3 +17,18 @@
 }">Prop Obj</p>
 
 <p appStyle>Diretiva</p>
+
+<p class="meu-texto">Normal</p>
+
+<p [attr.class]="'meu-texto'">Attr</p>
+
+<p [className]="'meu-texto meu-size'">prop</p>
+
+<p [class]="{
+    'meu-texto': true,
+    'meu-size': true
+}">prop class</p>
+
+<p appClass>Diretiva</p>
+
+<input appList>
