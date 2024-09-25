@@ -6,7 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'host-binding';
-
-  appBgColor = 'green'
+  title = 'projeto-element-ref';
 }

@@ -7,6 +7,7 @@ import { PropDisabled } from './diretibes/diretive-prop'
 import { StyleDirectives } from './diretibes/style.directive'
 import { ClassDiretive } from './diretibes/class-directive'
 import { ListenerDirective } from './diretibes/listener-diretive'
+import { InputBackgroundColor } from './diretibes/inputbackground.directive'
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ListenerDirective } from './diretibes/listener-diretive'
     PropDisabled,
     StyleDirectives,
     ClassDiretive,
-    ListenerDirective
+    ListenerDirective,
+    InputBackgroundColor
   ],
   imports: [
     BrowserModule,
