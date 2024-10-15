@@ -1,3 +1,27 @@
-.balance-card {
-    
+header {
+    background-color: rgb(240, 89, 89);
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Define 3 colunas: auto para o ícone, 1fr para o texto à esquerda, e auto para o valor à direita */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 10px;
+}
+
+header img {
+    width: 30px;  /* Define o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1:first-of-type {
+    grid-column: 2 / 3; /* Coloca o primeiro h1 na segunda coluna */
+}
+
+header h1.balance-value {
+    grid-column: 3 / 4; /* Coloca o segundo h1 (valor) na terceira coluna */
+    text-align: right;  /* Alinha o texto à direita */
+    font-size: 1.5rem;  /* Ajusta o tamanho do texto */
 }

@@ -1,0 +1,43 @@
+.container {
+    background-color: rosybrown;
+    border: solid black 5px;
+    padding: 15px;
+    display: grid;
+    gap: 1;
+    grid-template-columns: auto auto auto;
+}
+
+.container div {
+    background-color: white;
+    border: 2px solid blue;
+    padding: 20px;
+}
+
+#item-1{
+   grid-column-start: 1; 
+   grid-column-end: 4;
+}
+
+#item-2{
+    grid-row-start: 2; 
+    grid-row-end: 4;
+}
+
+#item-3{
+    justify-self: end;
+    height: 200px;
+}
+
+#item-4{
+    align-self: center;
+}
+
+#item-5{
+    justify-self: start;
+    height: 200px;
+}
+
+#item-6{
+    align-self: end;
+}
+
