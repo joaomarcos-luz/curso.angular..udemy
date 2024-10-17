@@ -1,27 +1,34 @@
-header {
-    background-color: rgb(240, 89, 89);
+.balance-card header {
+    background-color: rgb(252, 55, 55);
     display: grid;
-    grid-template-columns: auto 1fr auto; /* Define 3 colunas: auto para o ícone, 1fr para o texto à esquerda, e auto para o valor à direita */
-    align-items: center; /* Centraliza os itens verticalmente */
+    align-items: center;
     padding: 10px;
+    overflow: auto;
+    margin: 0%;
+    grid-template-areas: 
+    "img descricao saldo"
+    ;
+    grid-template-columns: auto 1fr auto;
 }
 
-header img {
-    width: 30px;  /* Define o tamanho da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+.balance-card header img {
+    grid-area: img; 
+    max-height: 50px;
 }
 
-header h1 {
-    margin: 0;
+h1.descricao-balance-card {
+    grid-area: descricao;
+    text-align: left;
+    margin: 0px;
 }
 
-header h1:first-of-type {
-    grid-column: 2 / 3; /* Coloca o primeiro h1 na segunda coluna */
+h1.saldo-balance-card {
+    grid-area: saldo;
+    margin: 0px;
 }
 
-header h1.balance-value {
-    grid-column: 3 / 4; /* Coloca o segundo h1 (valor) na terceira coluna */
-    text-align: right;  /* Alinha o texto à direita */
-    font-size: 1.5rem;  /* Ajusta o tamanho do texto */
+//MAIN
+
+.balance-card main {
+    background-color: white;
 }
