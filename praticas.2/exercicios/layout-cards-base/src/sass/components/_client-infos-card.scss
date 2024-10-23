@@ -1,3 +1,38 @@
 .client-infos-card {
-    
+
+    header {
+        background-color: rgb(119, 119, 247);
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        overflow: auto;
+        margin: 0%;
+        height: 100%;
+
+       img {
+            max-width: 42px;
+        }
+
+       span {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            padding-left: 10px;
+
+        }
+    }
+
+    main {
+        background-color: white;
+        height: 100%;
+        padding: 35px 30px;
+
+        div.main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid black;
+        }
+    }
 }
